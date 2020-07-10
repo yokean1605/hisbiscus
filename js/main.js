@@ -18,7 +18,7 @@
       $(".nav").css({ "box-shadow": "rgba(0, 0, 0, 0.15) 0px 5px 7px -1px" });
       setTimeout(function () {
         $(".scroll-x").css("max-height", "79vh");
-      }, 100);
+      }, 50);
 
     } else if (y < 5) {
       $(".scroll-x").css({ "max-height": "49vh" });
@@ -32,21 +32,24 @@
       setTimeout(function () {
         $(".h").css("max-height", "100px");
         $(".nav").css({ "box-shadow": "none" });
-      }, 100);
+      }, 50);
       // // $(".scroll-x").css("max-height", "39vh");
     }
   });
 
   $(".scroll-x").scroll(function () {
-    if ($(this).scrollTop() > 50) {
+    if ($(this).scrollTop() > 100) {
       $('#back-to-top').fadeIn();
+      $('.footer').css('bottom', '-56px');
     } else {
       $('#back-to-top').fadeOut();
+      $('.footer').css('bottom', '0px');
     }
   });
   // scroll body to 0px on click
   $('#back-to-top').click(function () {
     $('#back-to-top').tooltip('hide');
+    $('.footer').css('bottom', '-56px');
     $(".scroll-x").animate({ scrollTop: 0 }, 300);
     return false;
   });

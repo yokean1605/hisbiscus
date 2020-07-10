@@ -273,13 +273,13 @@ h6, a, label, p, div {
 .scroll-x {
   max-height: 49vh;
   overflow: auto;
-  transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.1s ease-in-out;
 }
 
 .h {
   max-height: 100px;
   overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.1s ease-in-out;
 }
 
 .sidenav {
@@ -291,7 +291,7 @@ h6, a, label, p, div {
   right: 0;
   background-color: #f5f5f5;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.2s;
   padding-top: 60px;
   text-align: center;
 }
@@ -348,6 +348,28 @@ h6, a, label, p, div {
 .icon-nav > div.icon.icon-3 {
   width: 12px;
   float: right;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 36%;
+  color: white;
+  text-align: center;
+  background-color: whitesmoke;
+  transition: 0.2s;
+  height: 56px;
+}
+
+.footer > p {
+  color: red;
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 992px) {
