@@ -18,7 +18,7 @@
       $(".nav").css({ "box-shadow": "rgba(0, 0, 0, 0.15) 0px 5px 7px -1px" });
       setTimeout(function () {
         $(".scroll-x").css("max-height", "79vh");
-      }, 50);
+      }, 10);
 
     } else if (y < 5) {
       $(".scroll-x").css({ "max-height": "49vh" });
@@ -32,7 +32,7 @@
       setTimeout(function () {
         $(".h").css("max-height", "100px");
         $(".nav").css({ "box-shadow": "none" });
-      }, 50);
+      }, 10);
       // // $(".scroll-x").css("max-height", "39vh");
     }
   });
