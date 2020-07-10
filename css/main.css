@@ -171,7 +171,7 @@ h6, a, label, p, div {
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 10;
+  z-index: 999;
   background: red;
 }
 
@@ -360,6 +360,7 @@ h6, a, label, p, div {
   background-color: whitesmoke;
   transition: 0.2s;
   height: 56px;
+  z-index: 1;
 }
 
 .footer > p {
