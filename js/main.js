@@ -16,12 +16,12 @@
     if (y > 200) {
       $(".h").css("max-height", "0px");
       $(".nav").css({ "box-shadow": "rgba(0, 0, 0, 0.15) 0px 5px 7px -1px" });
+      $(".scroll-x").css("max-height", "77vh");
       setTimeout(function () {
-        $(".scroll-x").css("max-height", "79vh");
       }, 10);
 
     } else if (y < 5) {
-      $(".scroll-x").css({ "max-height": "49vh" });
+      $(".scroll-x").css({ "max-height": "45vh" });
     }
 
   });
@@ -29,9 +29,9 @@
   $(".scroll-x").scroll(function () {
     var currentScroll = $(this).scrollTop();
     if (currentScroll == 0) {
+      $(".h").css("max-height", "100px");
+      $(".nav").css({ "box-shadow": "none" });
       setTimeout(function () {
-        $(".h").css("max-height", "100px");
-        $(".nav").css({ "box-shadow": "none" });
       }, 10);
       // // $(".scroll-x").css("max-height", "39vh");
     }
