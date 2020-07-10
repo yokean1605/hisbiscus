@@ -273,13 +273,13 @@ h6, a, label, p, div {
 .scroll-x {
   max-height: 49vh;
   overflow: auto;
-  transition: max-height 0.2s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .h {
   max-height: 100px;
   overflow: hidden;
-  transition: max-height 0.2s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .sidenav {
