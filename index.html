@@ -21,16 +21,16 @@
 		href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
 		rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-	<!-- Custom styles for this template -->
 	<link href="css/main.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"> -->
+	<!-- Custom styles for this template -->
 
 </head>
 
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-5 position-relative left-content">
+			<div class="col-lg-5 position-relative left-content p-0">
 				<!-- preloader -->
 				<div id="overlayer"></div>
 				<span class="loader">
@@ -38,194 +38,211 @@
 				</span>
 
 				<!-- menu from right -->
-				<div class="icon-nav" onclick="openNav()">&#9776;</div>
+				<div class="icon-nav" onclick="openNav()">
+					<div class="icon-1 icon"></div>
+					<div class="icon-2 icon"></div>
+					<div class="icon-3 icon"></div>
+				</div>
 				<div id="mySidenav" class="sidenav">
 					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-					<a href="#">About</a>
-					<a href="#">Services</a>
-					<a href="#">Clients</a>
-					<a href="#">Contact</a>
-				</div>
-
-				<!-- Logo -->
-				<nav class="navbar navbar-expand-lg navbar-light bg-transparent h">
-					<a class="navbar-brand py-2 m-0 w-100" href="/">
-						<img src="img/logo.png" alt="Logos"
-							class="img-fluid logo-restaurant logo-head mx-auto d-block img-item h">
+					<a href="#">
+						Language (EN)
 					</a>
-				</nav>
-				<div class="text-center d-block w-100">
-					<h4 class="menu-top img-item h">Menu</h4>
-					<h6 class="menu-btm">Menu</h6>
+					<a href="#">
+						Give Feedback
+					</a>
 				</div>
 
-				<!-- Menus content -->
-				<ul class="nav nav-tabs nav-tabs-custom" id="myTab" role="tablist">
-					<li class="nav-item">
-						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#starters" role="tab"
-							aria-controls="starters" aria-selected="true">
-							<div class="h">
-								<img src="img/starter.jpg" alt="" class="img-fluid rounded img-item">
-							</div>
-							<span>Starters</span>
+				<div id="content">
+					<!-- Logo -->
+					<nav class="navbar navbar-expand-lg navbar-light bg-transparent h">
+						<a class="navbar-brand py-2 m-0 w-100" href="/">
+							<img src="img/logo.png" alt="Logos"
+								class="img-fluid logo-restaurant logo-head mx-auto d-block img-item h">
 						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#heavyDay" role="tab"
-							aria-controls="heavyDay" aria-selected="false">
-							<div class="h">
-								<img src="img/heavy-day.jpg" alt="" class="img-fluid rounded img-item">
-							</div>
-							<span>Heavy day</span>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#pasta" role="tab"
-							aria-controls="pasta" aria-selected="false">
-							<div class="h">
-								<img src="img/no-img.svg" alt="" class="img-fluid rounded img-item">
-							</div>
-							<span>Pasta</span>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#noPasta" role="tab"
-							aria-controls="noPasta" aria-selected="false">
-							<div class="h">
-								<img src="img/no-img.svg" alt="" class="img-fluid rounded img-item">
-							</div>
-							<span>No Pasta</span>
-						</a>
-					</li>
-				</ul>
+					</nav>
+					<div class="text-center d-block w-100">
+						<h4 class="menu-top img-item h">Menu</h4>
+						<h6 class="menu-btm">Menu</h6>
+					</div>
 
-				<!-- add starter item -->
-				<div class="tab-content" id="myTabContent">
-					<!-- starters -->
-					<div class="tab-pane fade show active" id="starters" role="tabpanel" aria-labelledby="home-tab">
-						<div class="pt-4">
-							<div class="text-center mb-3">
-								<h5 class="font-weight-bold">Starters</h5>
-								<span class="d-block font-weight-light">Starters Description</span>
-							</div>
-							<div class="scroll-x">
+					<!-- Menus content -->
+					<ul class="nav nav-tabs nav-tabs-custom" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#starters" role="tab"
+								aria-controls="starters" aria-selected="true">
+								<div class="h">
+									<img src="img/starter.jpg" alt="" class="img-fluid rounded img-item">
+								</div>
+								<span>Starters</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#heavyDay" role="tab"
+								aria-controls="heavyDay" aria-selected="false">
+								<div class="h">
+									<img src="img/heavy-day.jpg" alt="" class="img-fluid rounded img-item">
+								</div>
+								<span>Heavy day</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="contact-tab" data-toggle="tab" href="#pasta" role="tab"
+								aria-controls="pasta" aria-selected="false">
+								<div class="h">
+									<img src="img/no-img.svg" alt="" class="img-fluid rounded img-item">
+								</div>
+								<span>Pasta</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="contact-tab" data-toggle="tab" href="#noPasta" role="tab"
+								aria-controls="noPasta" aria-selected="false">
+								<div class="h">
+									<img src="img/no-img.svg" alt="" class="img-fluid rounded img-item">
+								</div>
+								<span>No Pasta</span>
+							</a>
+						</li>
+					</ul>
 
-								<!-- item -->
-								<div class="card mb-3 card-item">
-									<div class="row no-gutters">
-										<div class="col-md-3">
-											<div class="label-card-img">
-												<img src="img/new.png" alt="new-label" class="img-fluid">
-												<img src="img/start.png" alt="new-label" class="img-fluid">
+					<!-- add starter item -->
+					<div class="tab-content" id="myTabContent">
+						<!-- starters -->
+						<div class="tab-pane fade show active" id="starters" role="tabpanel" aria-labelledby="home-tab">
+							<div class="pt-4 px-2">
+								<div class="scroll-x">
+									<div class="text-center mb-3">
+										<h5 class="">Starters</h5>
+										<span class="d-block font-weight-light">Starters Description</span>
+									</div>
+
+									<!-- item -->
+									<div class="card mb-3 card-item">
+										<div class="row no-gutters">
+											<div class="col-md-3">
+												<div class="label-card-img">
+													<img src="img/new.png" alt="new-label" class="img-fluid">
+													<img src="img/start.png" alt="new-label" class="img-fluid">
+												</div>
+												<img src="img/item1.jpg" class="card-img" alt="items">
 											</div>
-											<img src="img/item1.jpg" class="card-img" alt="items">
-										</div>
-										<div class="col-md-9">
-											<div class="card-body">
-												<h5 class="card-title">Item 1</h5>
-												<p class="card-text">11.11</p>
-
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="card mb-3 card-item">
-									<div class="p-3">
-										<h5 class="mb-0">Test 1</h5>
-									</div>
-								</div>
-								<div class="card mb-3 card-item">
-									<div class="p-3">
-										<h5 class="mb-0">Test 2</h5>
-									</div>
-								</div>
-								<div class="card mb-3 card-item">
-									<div class="p-3">
-										<h5 class="mb-0">Test 3</h5>
-									</div>
-								</div>
-								<div class="card mb-3 card-item">
-									<div class="p-3">
-										<h5 class="mb-0">Test 4</h5>
-									</div>
-								</div>
-								<!-- item with accordions -->
-								<div class="card mb-3 card-item">
-									<div class="accordion" id="accordionExample">
-										<div class="card bg-transparent border-0">
-											<div class="card-header p-0 bg-transparent border-0 caret-tri"
-												id="headingOne">
-												<h5 class="mb-0 p-3" data-toggle="collapse" data-target="#collapseOne"
-													aria-expanded="true" aria-controls="collapseOne">
-													Section 1
-													<i class="fas fa-chevron-up" id="i-fas"></i>
-												</h5>
-											</div>
-
-											<div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-												data-parent="#accordionExample">
+											<div class="col-md-9">
 												<div class="card-body">
-													<div class="card mb-3 card-item">
-														<div class="p-3">
-															<h5 class="mb-0">Test 5</h5>
+													<h5 class="card-title">Item 1</h5>
+													<p class="card-text">11.11</p>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card mb-3 card-item">
+										<div class="p-3">
+											<h5 class="mb-0">Test 1</h5>
+										</div>
+									</div>
+									<div class="card mb-3 card-item">
+										<div class="p-3">
+											<h5 class="mb-0">Test 2</h5>
+										</div>
+									</div>
+									<div class="card mb-3 card-item">
+										<div class="p-3">
+											<h5 class="mb-0">Test 3</h5>
+										</div>
+									</div>
+									<div class="card mb-3 card-item">
+										<div class="p-3">
+											<h5 class="mb-0">Test 4</h5>
+										</div>
+									</div>
+									<!-- item with accordions -->
+									<div class="card mb-3 card-item">
+										<div class="accordion" id="accordionExample">
+											<div class="card bg-transparent border-0">
+												<div class="card-header p-0 bg-transparent border-0 caret-tri"
+													id="headingOne">
+													<h5 class="mb-0 p-3" data-toggle="collapse"
+														data-target="#collapseOne" aria-expanded="true"
+														aria-controls="collapseOne">
+														Section 1
+														<i class="fas fa-chevron-up" id="i-fas"></i>
+													</h5>
+												</div>
+
+												<div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+													data-parent="#accordionExample">
+													<div class="card-body">
+														<div class="card mb-3 card-item">
+															<div class="p-3">
+																<h5 class="mb-0">Test 5</h5>
+															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<!-- end item -->
-							</div>
 
-						</div>
-					</div>
-					<!-- Heavy Day -->
-					<div class="tab-pane fade" id="heavyDay" role="tabpanel" aria-labelledby="profile-tab">
-						<div class="pt-4 scroll-x">
-							<div class="text-center mb-3">
-								<h5 class="font-weight-bold">Heavy day</h5>
-								<span class="d-block font-weight-light">Heavy day Description</span>
+									<!-- space -->
+									<div class="py-3"></div>
+									<div class="py-3"></div>
+									<div class="py-3"></div>
+									<!-- end item -->
+								</div>
+
 							</div>
-							<!-- item -->
-							<div class="card mb-3 card-item" data-aos="slide-up">
-								<div class="row no-gutters">
-									<div class="col-md-1">
-										<div class="label-card-img d-block">
-											<img src="img/new.png" alt="new-label" class="img-fluid">
-											<img src="img/start.png" alt="new-label" class="img-fluid">
+						</div>
+						<!-- Heavy Day -->
+						<div class="tab-pane fade" id="heavyDay" role="tabpanel" aria-labelledby="profile-tab">
+							<div class="pt-4 scroll-x">
+								<div class="text-center mb-3">
+									<h5 class="">Heavy day</h5>
+									<span class="d-block font-weight-light t-menu">Heavy day Description</span>
+								</div>
+								<!-- item -->
+								<div class="card mb-3 card-item" data-aos="slide-up">
+									<div class="row no-gutters">
+										<div class="col-md-1">
+											<div class="label-card-img d-block">
+												<img src="img/new.png" alt="new-label" class="img-fluid">
+												<img src="img/start.png" alt="new-label" class="img-fluid">
+											</div>
 										</div>
-									</div>
-									<div class="col-md-11">
-										<div class="card-body">
-											<h5 class="card-title mb-0">Garlic</h5>
-											<p class="card-text">10</p>
+										<div class="col-md-11">
+											<div class="card-body">
+												<h5 class="card-title mb-0">Garlic</h5>
+												<p class="card-text">10</p>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- Pasta -->
-					<div class="tab-pane fade" id="pasta" role="tabpanel" aria-labelledby="contact-tab">
-						<div class="py-4 scroll-x">
-							<div class="text-center mb-3">
-								<h5 class="font-weight-bold">Pasta</h5>
-								<span class="d-block font-weight-light">Pasta Description</span>
+						<!-- Pasta -->
+						<div class="tab-pane fade" id="pasta" role="tabpanel" aria-labelledby="contact-tab">
+							<div class="py-4 scroll-x">
+								<div class="text-center mb-3">
+									<h5 class="">Pasta</h5>
+									<span class="d-block font-weight-light t-menu">Pasta Description</span>
+								</div>
+							</div>
+						</div>
+						<!-- No Pasta -->
+						<div class="tab-pane fade" id="noPasta" role="tabpanel" aria-labelledby="contact-tab">
+							<div class="py-4 scroll-x">
+								<div class="text-center mb-3">
+									<h5 class="">No Pasta</h5>
+									<!-- <span class="d-block font-weight-light">Pasta Description</span> -->
+								</div>
 							</div>
 						</div>
 					</div>
-					<!-- No Pasta -->
-					<div class="tab-pane fade" id="noPasta" role="tabpanel" aria-labelledby="contact-tab">
-						<div class="py-4 scroll-x">
-							<div class="text-center mb-3">
-								<h5 class="font-weight-bold">No Pasta</h5>
-								<!-- <span class="d-block font-weight-light">Pasta Description</span> -->
-							</div>
-						</div>
-					</div>
+					<!-- end item -->
 				</div>
-				<!-- end item -->
+				<a href="" id="back-to-top" class="btn btn-danger btn-top">
+					<img src="img/up.svg" alt="arrow" class="img-fluid">
+				</a>
 			</div>
 
 			<div class="col-lg-7 d-none d-lg-block h-100 pl-0">
@@ -243,7 +260,6 @@
 			</div>
 		</div>
 	</div>
-
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="js/main.min.js"></script>

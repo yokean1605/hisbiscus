@@ -1,0 +1,172 @@
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+/*PRELOADING------------ */
+#overlayer {
+  width:100%;
+  height:100%;  
+  position:absolute;
+  z-index:10;
+  background:red;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index:999;
+  border: 4px solid #Fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  
+  25% {
+    height: 0%;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  75% {
+    height: 100%;
+  }
+  
+  100% {
+    height: 0%;
+  }
+}
+
+.scroll-x {
+  max-height: 49vh;
+  overflow: auto;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.h {
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-weight: 500;
+  margin: 0 30px;
+  border-bottom: .55px solid #c8c7cc!important;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: -6px;
+  right: 17px;
+  font-size: 36px;
+  margin-left: 50px;
+  border-bottom: none !important;
+  padding: 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.icon-nav {
+  display: none;
+  position: absolute;
+  right: 15px;
+  z-index: 1;
+  display: block;
+  top: 15px;
+  text-align: right;
+  >div.icon{
+    background-color: #7E7F86;
+    cursor : pointer;
+    width: 22px;
+    height: 2px;
+    margin-bottom: 5px;
+    &.icon-3 {
+      width: 12px;
+      float: right;
+    }
+  }
+}

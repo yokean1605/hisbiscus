@@ -1,0 +1,110 @@
+// Global styling for this template
+body {
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(245,245,245);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, a, label, p, div {
+  // font-weight: 800;
+  @include nunito-font;
+}
+
+.text-logo {
+  @include nunito-font;
+  font-weight: 600;
+}
+.logo-restaurant {
+  max-width: 80px;
+}
+.logo-head {
+  max-width: 58px;
+}
+.border-red {
+  margin: 20px auto;
+  border-bottom-style: solid !important;
+  border-bottom-width: 1px !important;
+  border-color: red;
+}
+
+.right-content {
+  height: 100vh;
+  padding: 0 130px;
+}
+
+.left-content {
+  border-right: .55px solid #c8c7cc!important;
+}
+
+.nav-tabs-custom {
+  border-bottom: none !important;
+  >.nav-item {
+    width: 25%;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    a {
+      text-align: center;
+      color: #575962;
+      padding: 0px;
+      > span {
+        padding: .8rem 1rem;
+        display: block;
+        font-weight: 600;
+      }
+    }
+    >a.active, a:hover {
+      background-color: transparent;
+      color: rgb(182, 0, 29);
+      border-color: transparent;
+      border-bottom: 2px solid rgb(182, 0, 29);
+    }
+  }
+}
+
+// items
+.card-item {
+  box-shadow: 2px 2px 10px rgba(0,0,0,.15);
+  background: transparent;
+  > .row {
+    .card-img {
+      object-fit: fill;
+      min-height: 90px;
+      border-radius: 5px 0 0 5px;
+    }
+    .card-body {
+      padding: 10px;
+    }
+    // label
+    .label-card-img {
+      padding: 5px;
+      position: absolute;
+      display: flex;
+      >img {
+        max-width: 28px;
+      }
+    }
+  }
+}
+#i-fas {
+  position: absolute;
+  right: 25px;
+  top: 18px;
+}
+
+.btn-top {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  padding: 20px;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  display: none;
+  >img {
+    width: 15px;
+  }
+}
