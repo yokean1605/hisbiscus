@@ -2,7 +2,8 @@
   "use strict"; // Start of use strict
 
   $(".caret-tri").on("click", function () {
-    $("#i-fas").toggleClass("fa-chevron-up fa-chevron-down");
+    $("#i-fas").toggleClass("fa-chevron-down fa-chevron-up");
+    $(".card-accordions").toggleClass("border-show");
   });
 
   // preloader
@@ -13,17 +14,16 @@
 
   $('.scroll-x').on('scroll', function () {
     var y = $(this).scrollTop();
-    if (y > 200) {
+    if (y) {
       $(".h").css("max-height", "0px");
-      $(".nav").css({ "box-shadow": "rgba(0, 0, 0, 0.15) 0px 5px 7px -1px" });
+      $(".nav").css({ "box-shadow": "rgba(0, 0, 0, 0.15) 0px 5px 7px -2px" });
       $(".scroll-x").css("max-height", "77vh");
-      setTimeout(function () {
-      }, 10);
-
-    } else if (y < 5) {
+      $(".menu-top").css({ "line-height": "0", "margin-bottom": "0px" });
+      $('.pt4').toggleClass('pt-4 pt-0');
+    } else {
+      $(".menu-top").css({ "line-height": "1.2", "margin-bottom": "1rem" });
       $(".scroll-x").css({ "max-height": "45vh" });
     }
-
   });
 
   $(".scroll-x").scroll(function () {

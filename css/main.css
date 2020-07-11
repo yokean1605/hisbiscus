@@ -8,6 +8,7 @@
 body {
   transition: all 0.3s ease-in-out;
   background-color: whitesmoke;
+  color: #575962;
 }
 
 h1,
@@ -48,14 +49,25 @@ h6, a, label, p, div {
   border-right: 0.55px solid #c8c7cc !important;
 }
 
+@media screen and (max-width: 992px) {
+  .left-content {
+    border-right: none !important;
+  }
+}
+
 .nav-tabs-custom {
   border-bottom: none !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
 }
 
 .nav-tabs-custom > .nav-item {
   width: 25%;
   padding-left: 0.1rem;
   padding-right: 0.1rem;
+  white-space: nowrap;
+  margin-bottom: 0px;
 }
 
 .nav-tabs-custom > .nav-item a {
@@ -70,11 +82,23 @@ h6, a, label, p, div {
   font-weight: 600;
 }
 
+@media screen and (max-width: 425px) {
+  .nav-tabs-custom > .nav-item a {
+    width: 120px;
+  }
+}
+
 .nav-tabs-custom > .nav-item > a.active, .nav-tabs-custom > .nav-item a:hover {
   background-color: transparent;
   color: #b6001d;
   border-color: transparent;
   border-bottom: 2px solid #b6001d;
+}
+
+@media screen and (max-width: 425px) {
+  .nav-tabs-custom > .nav-item {
+    width: auto !important;
+  }
 }
 
 .card-item {
@@ -111,8 +135,8 @@ h6, a, label, p, div {
 
 #i-fas {
   position: absolute;
-  right: 25px;
-  top: 18px;
+  right: 20px;
+  top: 15px;
 }
 
 .btn-top {
@@ -128,6 +152,54 @@ h6, a, label, p, div {
 
 .btn-top > img {
   width: 15px;
+}
+
+.menu-top {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.menu-btm {
+  font-weight: 400;
+}
+
+.title-items > h5 {
+  font-weight: 600;
+}
+
+.card-title.card-title-custom {
+  font-weight: 600 !important;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.card-text-custom {
+  font-weight: 600;
+  font-size: 18px;
+  color: #e6034b;
+}
+
+.card-item {
+  border-color: transparent;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.padding {
+  padding: 15px;
+}
+
+.card-item-test {
+  font-weight: 600 !important;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.card-accordions {
+  border-color: transparent;
+}
+
+.border-show {
+  border-color: rgba(182, 0, 29, 0.4) !important;
 }
 
 /* Add animation to "page content" */
@@ -299,19 +371,19 @@ h6, a, label, p, div {
 .sidenav a {
   padding: 20px;
   text-decoration: none;
-  font-size: 20px;
-  color: #818181;
+  font-size: 22px;
+  color: #575962;
   display: block;
   transition: 0.3s;
-  font-weight: 500;
   margin: 0 30px;
   border-bottom: 0.55px solid #c8c7cc !important;
+  font-weight: 600;
 }
 
 .sidenav .closebtn {
   position: absolute;
-  top: -6px;
-  right: 17px;
+  top: -3px;
+  right: -10px;
   font-size: 36px;
   margin-left: 50px;
   border-bottom: none !important;
@@ -371,6 +443,10 @@ h6, a, label, p, div {
   .footer {
     width: 100%;
   }
+}
+
+.card-item > .padding {
+  padding: 10px;
 }
 
 @media screen and (min-width: 992px) {
