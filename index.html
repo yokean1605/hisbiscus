@@ -33,7 +33,7 @@
 				</span>
 
 				<!-- menu from right -->
-				<div class="icon-nav" onclick="openNav()">
+				<div class="icon-nav" onclick="openNav('sidenav')">
 					<div class="icon-1 icon"></div>
 					<div class="icon-2 icon"></div>
 					<div class="icon-3 icon"></div>
@@ -105,7 +105,7 @@
 					<div class="tab-content" id="myTabContent">
 						<!-- starters -->
 						<div class="tab-pane fade show active" id="starters" role="tabpanel" aria-labelledby="home-tab">
-							<div class="pt-4">
+							<div class="pt4">
 								<div class="scroll-x px-2">
 									<div class="text-center mb-3 title-items">
 										<h5 class="">Starters</h5>
@@ -135,7 +135,15 @@
 									</div>
 									<div class="card mb-3 card-item">
 										<div class="padding">
-											<h5 class="card-item-test">Test 1</h5>
+											<h5 class="card-item-test" onclick="openNav()">
+												Test 1
+											</h5>
+											<div id="mySidenav" class="sidenav">
+												<a href="javascript:void(0)" class="back-left" onclick="closeNav()">
+													<i class="fas fa-chevron-left"></i>
+												</a>
+												<h3>Test 1</h3>
+											</div>
 										</div>
 									</div>
 									<div class="card mb-3 card-item">
@@ -198,7 +206,7 @@
 						</div>
 						<!-- Heavy Day -->
 						<div class="tab-pane fade" id="heavyDay" role="tabpanel" aria-labelledby="profile-tab">
-							<div class="pt-4">
+							<div class="pt4">
 								<div class="scroll-x px-2">
 									<div class="text-center mb-3">
 										<h5 class="">Heavy day</h5>
@@ -233,7 +241,7 @@
 						</div>
 						<!-- Pasta -->
 						<div class="tab-pane fade" id="pasta" role="tabpanel" aria-labelledby="contact-tab">
-							<div class="pt-4">
+							<div class="pt4">
 								<div class="scroll-x px-2">
 									<div class="text-center mb-3 title-items">
 										<h5 class="">Pasta</h5>
@@ -256,7 +264,7 @@
 						</div>
 						<!-- No Pasta -->
 						<div class="tab-pane fade" id="noPasta" role="tabpanel" aria-labelledby="contact-tab">
-							<div class="pt-4">
+							<div class="pt4">
 								<div class="scroll-x px-2">
 									<div class="text-center mb-3 title-items">
 										<h5 class="">No Pasta</h5>
@@ -308,7 +316,7 @@
 	</div>
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="js/main.min.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 
