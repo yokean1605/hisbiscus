@@ -100,13 +100,13 @@
 .scroll-x {
   max-height: 45vh;
   overflow: auto;
-  transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.1s ease-in-out;
 }
 
 .h {
   max-height: 100px;
   overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.1s ease-in-out;
 }
 
 .sidenav {

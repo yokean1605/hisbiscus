@@ -109,9 +109,6 @@ h6, a, label, p, div {
     }
   }
 }
-.collapse.show {
-  
-}
 #i-fas {
   position: absolute;
   right: 20px;
@@ -120,8 +117,8 @@ h6, a, label, p, div {
 
 .btn-top {
   position: absolute;
-  right: 15px;
-  bottom: 15px;
+  right: 10px;
+  bottom: 10px;
   padding: 20px;
   border-radius: 50%;
   width: 65px;
@@ -133,6 +130,7 @@ h6, a, label, p, div {
 }
 
 .menu-top {
+  transition: all 0.3s ease-in-out;
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -174,3 +172,24 @@ h6, a, label, p, div {
 .border-show {
   border-color: rgba(182, 0, 29, 0.4) !important;
 }
+
+.pt4 {
+  padding-top: 1.5rem;
+}
+
+.card-item-show {
+  position: fixed;
+}
+
+.back-left {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  margin: 10px 0 0 10px;
+  background-color: #fff;
+  z-index: 1;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 10px rgba(0,0,0,.2);
+  box-shadow: 0 3px 10px rgba(0,0,0,.2);
+}
+

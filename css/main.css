@@ -155,6 +155,7 @@ h6, a, label, p, div {
 }
 
 .menu-top {
+  transition: all 0.3s ease-in-out;
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -364,13 +365,13 @@ h6, a, label, p, div {
 .scroll-x {
   max-height: 45vh;
   overflow: auto;
-  transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.1s ease-in-out;
 }
 
 .h {
   max-height: 100px;
   overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.1s ease-in-out;
 }
 
 .sidenav {
