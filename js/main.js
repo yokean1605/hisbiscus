@@ -14,13 +14,13 @@
 
   $('.scroll-x').on('scroll', function () {
     var y = $(this).scrollTop();
-    if (y > 200) {
+    if (y) {
       $(".h").css("max-height", "0px");
       $(".nav").css({ "box-shadow": "rgba(0, 0, 0, 0.15) 0px 5px 7px -2px" });
       $(".scroll-x").css("max-height", "77vh");
       $(".menu-top").css({ "line-height": "0", "margin-bottom": "0px" });
       $('.pt4').toggleClass('pt-4 pt-0');
-    } else if (y < 5) {
+    } else {
       $(".menu-top").css({ "line-height": "1.2", "margin-bottom": "1rem" });
       $(".scroll-x").css({ "max-height": "45vh" });
     }
