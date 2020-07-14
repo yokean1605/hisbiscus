@@ -59,11 +59,9 @@
   $('#back-to-top').click(function () {
     // $('#back-to-top').tooltip('hide');
     $('.footer').css('bottom', '-56px');
-    // $(".scroll-x").animate({ scrollTop: 0 }, 300);
+    $(".scroll-x").animate({ scrollTop: 0 }, 100);
     return false;
   });
-
-  // $('#back-to-top').tooltip('show');
 
 
 })(jQuery); // End of use strict
