@@ -118,6 +118,7 @@ h6, a, label, p, div {
 .toTop {
   position: fixed;
   width: 36%;
+  bottom: 10px;
   @media screen and(max-width: 992px) {
     width: 100%;
   }
@@ -130,8 +131,7 @@ h6, a, label, p, div {
   height: 65px;
   display: none;
   float: right;
-  position: absolute;
-  top: -42px;
+  position: relative;
   >img {
     width: 15px;
   }
