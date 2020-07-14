@@ -1,4 +1,18 @@
 @import "variables.scss";
+// core bootstrap
+@import "./../node_modules/bootstrap/scss/bootstrap.scss";
+
+// font from googles
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+// core font awesome
+@import "./../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "./../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "./../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "./../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "./../node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss";
+
+// custom sass
 @import "mixins.scss";
 @import "global.scss";
 @import "navbar.scss";
