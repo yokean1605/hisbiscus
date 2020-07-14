@@ -63,6 +63,9 @@ h6, a, label, p, div {
         padding: .8rem 1rem;
         display: block;
         font-weight: 600;
+        letter-spacing: .05rem;
+        font-size: 16px;
+        line-height: 22px;
       }
       @media screen and(max-width: 425px) {
         width: 120px;
@@ -84,6 +87,14 @@ h6, a, label, p, div {
 .content-left-item {
   min-width: 56px;
   min-height: 56px;
+  &.no-img {
+    min-width: 46px;
+    .label-card-img {
+      padding: 8px;
+      display: grid;
+      position: inherit;
+    }
+  }
   .label-card-img {
     padding: 5px;
     position: absolute;
@@ -104,6 +115,9 @@ h6, a, label, p, div {
   padding-top: 10px;
   padding-right: 12px;
   padding-left: 12px;
+  &.no-img {
+    padding-left: 0px;
+  }
 }
 .card-item {
   box-shadow: 2px 2px 10px rgba(0,0,0,.15);
@@ -174,6 +188,15 @@ h6, a, label, p, div {
 .title-items {
   > h5 {
     font-weight: 600;
+    letter-spacing: .79px;
+    color: #5c5c5c;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .t-menu {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 

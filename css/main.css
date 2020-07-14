@@ -18706,6 +18706,9 @@ h6, a, label, p, div {
   padding: .8rem 1rem;
   display: block;
   font-weight: 600;
+  letter-spacing: .05rem;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 @media screen and (max-width: 425px) {
@@ -18732,6 +18735,16 @@ h6, a, label, p, div {
   min-height: 56px;
 }
 
+.content-left-item.no-img {
+  min-width: 46px;
+}
+
+.content-left-item.no-img .label-card-img {
+  padding: 8px;
+  display: grid;
+  position: inherit;
+}
+
 .content-left-item .label-card-img {
   padding: 5px;
   position: absolute;
@@ -18752,6 +18765,10 @@ h6, a, label, p, div {
   padding-top: 10px;
   padding-right: 12px;
   padding-left: 12px;
+}
+
+.content-right-item.no-img {
+  padding-left: 0px;
 }
 
 .card-item {
@@ -18832,6 +18849,16 @@ h6, a, label, p, div {
 
 .title-items > h5 {
   font-weight: 600;
+  letter-spacing: .79px;
+  color: #5c5c5c;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.title-items .t-menu {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .card-title.card-title-custom {
