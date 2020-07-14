@@ -146,8 +146,10 @@ h6, a, label, p, div {
   font-weight: 400;
 }
 
-.title-items > h5 {
-  font-weight: 600;
+.title-items {
+  > h5 {
+    font-weight: 600;
+  }
 }
 
 .card-title.card-title-custom  {
@@ -182,7 +184,7 @@ h6, a, label, p, div {
 }
 
 .pt4 {
-  padding-top: 1.5rem;
+  padding-top: .85rem;
 }
 
 .card-item-show {
