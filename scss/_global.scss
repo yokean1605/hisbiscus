@@ -115,15 +115,23 @@ h6, a, label, p, div {
   top: 15px;
 }
 
+.toTop {
+  position: fixed;
+  width: 36%;
+  @media screen and(max-width: 992px) {
+    width: 100%;
+  }
+}
 .btn-top {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
+  right: 3px;
   padding: 20px;
   border-radius: 50%;
   width: 65px;
   height: 65px;
   display: none;
+  float: right;
+  position: absolute;
+  top: -42px;
   >img {
     width: 15px;
   }

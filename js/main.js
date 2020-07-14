@@ -38,6 +38,14 @@
     }
   });
 
+  $('.nav-link').on('click', function () {
+    $(".menu-top").css({ "line-height": "0", "margin-bottom": "0px" });
+    $('.pt4').css('padding-top', '0px');
+    $(".h").css("max-height", "0px");
+    $(".scroll-x").css("max-height", "77vh");
+    $(".nav").css({ "box-shadow": "rgba(0, 0, 0, 0.15) 0px 5px 7px -2px" });
+  });
+
   $(".scroll-x").scroll(function () {
     if ($(this).scrollTop()) {
       $('#back-to-top').css('display', 'block');
