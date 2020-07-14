@@ -63,6 +63,15 @@ $(document).ready(function () {
   $('#back-to-top').click(function () {
     $('.footer').css('bottom', '-56px');
     $(".scroll-x").animate({ scrollTop: 0 }, 100);
+    setTimeout(function () {
+      $('.pt4').css('padding-top', '0.85rem');
+      $(".menu-top").css({ "line-height": "1.2", "margin-bottom": "1rem" });
+    }, 100);
+    $(".scroll-x").css({ "max-height": "42vh" });
+    $(".h").css("max-height", "100px");
+    $(".nav").css({ "box-shadow": "none" });
+    $('#back-to-top').css('display', 'none');
+    $('.footer').css('bottom', '0px');
     return false;
   });
 });
