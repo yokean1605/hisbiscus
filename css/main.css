@@ -18670,6 +18670,7 @@ h6, a, label, p, div {
 .right-content {
   height: 100vh;
   padding: 0 130px;
+  background-color: #f5f5f5;
 }
 
 .left-content {
@@ -18861,10 +18862,19 @@ h6, a, label, p, div {
   line-height: 22px;
 }
 
+a {
+  color: #575962;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .card-title.card-title-custom {
   font-weight: 600 !important;
   font-size: 18px;
   margin-bottom: 2px;
+  color: #575962;
 }
 
 .card-text-custom {
@@ -19116,7 +19126,7 @@ h6, a, label, p, div {
   display: none;
   position: absolute;
   right: 15px;
-  z-index: 1;
+  z-index: 0;
   display: block;
   top: 15px;
   text-align: right;
@@ -19135,10 +19145,53 @@ h6, a, label, p, div {
   float: right;
 }
 
+.content-detail-item {
+  padding: 20px;
+}
+
+.content-detail-item .content-right-item h6.card-title {
+  letter-spacing: .071rem;
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  color: #575962;
+}
+
+.content-detail-item .content-right-item .card-text {
+  font-size: 18px;
+}
+
+.content-detail-item .test-item {
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.content-detail-item .list-img-small {
+  margin-right: 0px !important;
+}
+
+.content-detail-item .list-img-small img {
+  width: 40px;
+  height: 40px;
+}
+
+.content-detail-item .description-container {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+  color: #575962;
+}
+
 .footer {
   position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: -56px;
   width: 36%;
   color: white;
   text-align: center;
@@ -19160,6 +19213,51 @@ h6, a, label, p, div {
 
 .card-item > .padding {
   padding: 10px;
+}
+
+.cd-panel {
+  height: 100vh;
+  position: fixed;
+  width: 35.8%;
+  z-index: 0;
+  top: 0;
+  left: 500px;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+  transition: .2s;
+}
+
+.cd-panel.cd-panel--is-visible {
+  left: 0px;
+}
+
+.cd-panel__header > a {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  margin: 10px 0 0 10px;
+  background-color: whitesmoke;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cd-panel__header > a::before {
+  content: attr(data-background-icon);
+  font-family: "Font Awesome 5 Free";
+  /* change like this */
+  font-weight: 900;
+  /* insert this definition */
+  position: absolute;
+  top: 8px;
+  left: 13px;
+}
+
+.image-content-slide img {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
 }
 
 @media screen and (min-width: 992px) {

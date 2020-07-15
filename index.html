@@ -105,50 +105,54 @@
 
 									<!-- item -->
 									<div class="card mb-3 card-item">
-										<div class="d-flex">
-											<div class="content-left-item">
-												<div class="label-card-img">
-													<img src="img/new.png" alt="new-label" class="img-fluid">
-													<img src="img/start.png" alt="new-label" class="img-fluid">
+										<a href="#0" class="cd-btn js-cd-panel-trigger" data-panel="item1">
+											<div class="d-flex">
+												<div class="content-left-item">
+													<div class="label-card-img">
+														<img src="img/new.png" alt="new-label" class="img-fluid">
+														<img src="img/start.png" alt="new-label" class="img-fluid">
+													</div>
+													<img src="img/item1.jpg" class="card-img" alt="items">
 												</div>
-												<img src="img/item1.jpg" class="card-img" alt="items">
+												<div class="content-right-item">
+													<h6 class="card-title card-title-custom">
+														Item1
+													</h6>
+													<h6 class="card-text card-text-custom mb-0">11.11</h6>
+												</div>
 											</div>
-											<div class="content-right-item">
-												<h6 class="card-title card-title-custom">
-													Item1
-												</h6>
-												<h6 class="card-text card-text-custom mb-0">11.11</h6>
-											</div>
-										</div>
+										</a>
 									</div>
-									<div class="card mb-3 card-item">
-										<div class="padding">
-											<h5 class="card-item-test" onclick="openNav()">
-												Test 1
-											</h5>
-											<div id="mySidenav" class="sidenav">
-												<a href="javascript:void(0)" class="back-left" onclick="closeNav()">
-													<i class="fas fa-chevron-left"></i>
-												</a>
-												<h3>Test 1</h3>
+									<a href="#0" class="cd-btn js-cd-panel-trigger" data-panel="test1">
+										<div class="card mb-3 card-item">
+											<div class="padding">
+												<h5 class="card-item-test">
+													Test 1
+												</h5>
 											</div>
 										</div>
-									</div>
-									<div class="card mb-3 card-item">
-										<div class="padding">
-											<h5 class="card-item-test">Test 2</h5>
+									</a>
+									<a href="#0" class="cd-btn js-cd-panel-trigger" data-panel="test2">
+										<div class="card mb-3 card-item">
+											<div class="padding">
+												<h5 class="card-item-test">Test 2</h5>
+											</div>
 										</div>
-									</div>
-									<div class="card mb-3 card-item">
-										<div class="padding">
-											<h5 class="card-item-test">Test 3</h5>
+									</a>
+									<a href="#0" class="cd-btn js-cd-panel-trigger" data-panel="test3">
+										<div class="card mb-3 card-item">
+											<div class="padding">
+												<h5 class="card-item-test">Test 3</h5>
+											</div>
 										</div>
-									</div>
-									<div class="card mb-3 card-item">
-										<div class="padding">
-											<h5 class="card-item-test">Test 4</h5>
+									</a>
+									<a href="#0" class="cd-btn js-cd-panel-trigger" data-panel="test4">
+										<div class="card mb-3 card-item">
+											<div class="padding">
+												<h5 class="card-item-test">Test 4</h5>
+											</div>
 										</div>
-									</div>
+									</a>
 									<!-- item with accordions -->
 									<div class="card mb-3 card-item card-accordions">
 										<div class="accordion" id="accordionExample">
@@ -268,6 +272,7 @@
 								</div>
 							</div>
 						</div>
+						<!-- footer fixed -->
 						<div class="footer py-3">
 							<p class="mb-0 text-center m-auto">Powered by
 								<img src="img/favicon.ico" alt="" class="img-fluid" width="15">
@@ -277,12 +282,123 @@
 					</div>
 					<!-- end item -->
 				</div>
+
+				<!-- click to scroll Top -->
 				<div class="toTop">
 					<a href="" id="back-to-top" class="btn btn-danger btn-top">
 						<img src="img/up.svg" alt="arrow" class="img-fluid">
 					</a>
 				</div>
-			</div>
+
+				<!-- you can code item slide form here-->
+				<div class="cd-panel cd-panel--from-right js-cd-panel-item1">
+					<div class="cd-panel__container">
+						<header class="cd-panel__header">
+							<a href="#0" class="cd-panel__close js-cd-close" data-background-icon="&#xf053;"></a>
+						</header>
+						<div class="cd-panel__content">
+							<div class="img-content-slide">
+								<img src="img/img-big1.jpg" alt="img" class="img-fluid">
+							</div>
+							<div class="content-detail-item">
+								<div class="content-right-item text-center p-0 mb-2">
+									<h6 class="card-title card-title-custom">
+										Item1
+									</h6>
+									<h6 class="card-text card-text-custom mb-0">11.11</h6>
+								</div>
+								<div class="list-img">
+									<ul class="list-inline mx-auto text-center">
+										<li class="list-inline-item list-img-small">
+											<img src="img/new.png" alt="">
+										</li>
+										<li class="list-inline-item list-img-small">
+											<img src="img/start.png" alt="">
+										</li>
+										<li class="list-inline-item list-img-small">
+											<img src="img/keto.svg" alt="">
+										</li>
+										<li class="list-inline-item list-img-small">
+											<img src="img/gluten.svg" alt="">
+										</li>
+										<li class="list-inline-item list-img-small">
+											<img src="img/gluten-free.svg" alt="">
+										</li>
+										<li class="list-inline-item list-img-small">
+											<img src="img/stat.png" alt="">
+										</li>
+										<li class="list-inline-item list-img-small">
+											<img src="img/egg-free.svg" alt="">
+										</li>
+									</ul>
+								</div>
+								<div class="description-container">
+									Item 1 Desc
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- slider test1 -->
+				<div class="cd-panel cd-panel--from-right js-cd-panel-test1">
+					<div class="cd-panel__container">
+						<header class="cd-panel__header">
+							<a href="#0" class="cd-panel__close js-cd-close" data-background-icon="&#xf053;"></a>
+						</header>
+						<div class="cd-panel__content">
+							<div class="content-detail-item p-5">
+								<h2 class="test-item">Test1</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- slider test2 -->
+				<div class="cd-panel cd-panel--from-right js-cd-panel-test2">
+					<div class="cd-panel__container">
+						<header class="cd-panel__header">
+							<a href="#0" class="cd-panel__close js-cd-close" data-background-icon="&#xf053;"></a>
+						</header>
+						<div class="cd-panel__content">
+							<div class="content-detail-item p-5">
+								<h2 class="test-item">Test2</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- slider test3 -->
+				<div class="cd-panel cd-panel--from-right js-cd-panel-test3">
+					<div class="cd-panel__container">
+						<header class="cd-panel__header">
+							<a href="#0" class="cd-panel__close js-cd-close" data-background-icon="&#xf053;"></a>
+						</header>
+						<div class="cd-panel__content">
+							<div class="content-detail-item p-5">
+								<h2 class="test-item">Test3</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- slider test4 -->
+				<div class="cd-panel cd-panel--from-right js-cd-panel-test4">
+					<div class="cd-panel__container">
+						<header class="cd-panel__header">
+							<a href="#0" class="cd-panel__close js-cd-close" data-background-icon="&#xf053;"></a>
+						</header>
+						<div class="cd-panel__content">
+							<div class="content-detail-item p-5">
+								<h2 class="test-item">Test4</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end cd-panel-->
+
+
+			</div> <!-- end col-lg-5 -->
 
 			<div class="col-lg-7 d-none d-lg-block h-100 pl-0">
 				<div class="right-content">
@@ -301,7 +417,7 @@
 	</div>
 	<script src="js/vendor/jquery.min.js"></script>
 	<script src="js/vendor/bootstrap.bundle.min.js"></script>
-	<script src="js/main.min.js"></script>
+	<script src="js/main.min.js" defer></script>
 
 </body>
 
