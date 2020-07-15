@@ -18677,10 +18677,14 @@ h6, a, label, p, div {
   border-right: 0.55px solid #c8c7cc !important;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .left-content {
     border-right: none !important;
   }
+}
+
+.img-fluid.rounded.img-item {
+  border-radius: 5% !important;
 }
 
 .nav-tabs-custom {
@@ -18710,6 +18714,7 @@ h6, a, label, p, div {
   letter-spacing: .05rem;
   font-size: 16px;
   line-height: 22px;
+  width: 116px;
 }
 
 @media screen and (max-width: 425px) {
@@ -18868,6 +18873,7 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: #575962;
 }
 
 .card-title.card-title-custom {
@@ -19126,7 +19132,7 @@ a:hover {
   display: none;
   position: absolute;
   right: 15px;
-  z-index: 0;
+  z-index: 2;
   display: block;
   top: 15px;
   text-align: right;
@@ -19219,7 +19225,7 @@ a:hover {
   height: 100vh;
   position: fixed;
   width: 35.8%;
-  z-index: 0;
+  z-index: 1;
   top: 0;
   left: 500px;
   background-color: #f5f5f5;
@@ -19227,8 +19233,15 @@ a:hover {
   transition: .2s;
 }
 
+@media screen and (max-width: 991px) {
+  .cd-panel {
+    left: 995px;
+  }
+}
+
 .cd-panel.cd-panel--is-visible {
   left: 0px;
+  width: 100%;
 }
 
 .cd-panel__header > a {
@@ -19264,6 +19277,7 @@ a:hover {
   .col-lg-7 {
     max-width: 64%;
     flex: 0 0 64%;
+    z-index: 999;
   }
   .col-lg-5 {
     max-width: 36%;

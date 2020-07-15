@@ -40,9 +40,13 @@ h6, a, label, p, div {
 
 .left-content {
   border-right: .55px solid #c8c7cc!important;
-  @media screen and(max-width: 992px) {
+  @media screen and(max-width: 991px) {
     border-right: none !important;
   }
+}
+
+.img-fluid.rounded.img-item {
+  border-radius: 5% !important;
 }
 
 .nav-tabs-custom {
@@ -67,6 +71,7 @@ h6, a, label, p, div {
         letter-spacing: .05rem;
         font-size: 16px;
         line-height: 22px;
+        width: 116px;
       }
       @media screen and(max-width: 425px) {
         width: 120px;
@@ -83,6 +88,7 @@ h6, a, label, p, div {
     }
   }
 }
+
 
 // items
 .content-left-item {
@@ -200,10 +206,11 @@ h6, a, label, p, div {
     line-height: 22px;
   }
 }
-a{
+a {
   color: #575962;
   &:hover {
     text-decoration: none;
+    color: #575962;
   }
 }
 .card-title.card-title-custom  {
