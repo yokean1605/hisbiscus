@@ -39,8 +39,8 @@
   position: absolute;
   z-index:999;
   border: 4px solid #Fff;
-  left: 50%;
-  top: 50%;
+  left: 47%;
+  top: 47%;
   transform: translate(-50%,-50%);
   animation: loader 2s infinite ease;
 }
@@ -98,7 +98,7 @@
 }
 
 .scroll-x {
-  max-height: 42vh;
+  max-height: 50vh;
   overflow: auto;
   transition: max-height 0.1s ease-in-out;
 }
