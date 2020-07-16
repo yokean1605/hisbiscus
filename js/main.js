@@ -1,3 +1,7 @@
+$(window).on('load', function () {
+  $(".loader").delay(2000).fadeOut("slow");
+  $("#overlayer").delay(2000).fadeOut("slow");
+});
 $(document).ready(function () {
   $(".caret-tri").on("click", function () {
     $("#i-fas").toggleClass("fa-chevron-down fa-chevron-up");
@@ -5,10 +9,6 @@ $(document).ready(function () {
   });
 
   // preloader
-  $(window).on('load', function () {
-    $(".loader").delay(2000).fadeOut("slow");
-    $("#overlayer").delay(2000).fadeOut("slow");
-  });
 
   $('.scroll-x').on('scroll', function () {
     var y = $(this).scrollTop();
