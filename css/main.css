@@ -19123,9 +19123,17 @@ a:hover {
 }
 
 .scroll-x {
-  max-height: 50vh;
+  max-height: 55vh;
   overflow: auto;
   transition: max-height 0.1s ease-in-out;
+  position: fixed;
+  width: 35.8%;
+}
+
+@media screen and (max-width: 768px) {
+  .scroll-x {
+    width: 100%;
+  }
 }
 
 .h {
@@ -19245,29 +19253,6 @@ a:hover {
   color: #575962;
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: -56px;
-  width: 36%;
-  color: white;
-  text-align: center;
-  background-color: whitesmoke;
-  transition: 0.2s;
-  height: 56px;
-  z-index: 1;
-}
-
-.footer > p {
-  color: red;
-}
-
-@media screen and (max-width: 992px) {
-  .footer {
-    width: 100%;
-  }
-}
-
 .card-item > .padding {
   padding: 10px;
 }
@@ -19277,7 +19262,7 @@ a:hover {
   z-index: 999;
   top: auto;
   left: 0;
-  bottom: -1000px;
+  bottom: -1300px;
   background-color: transparent;
 }
 
@@ -19309,7 +19294,7 @@ a:hover {
   background-color: #f5f5f5;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .form-slide-bottom .cd-panel > .cd-panel__container {
     width: 100% !important;
     height: 100% !important;
@@ -19319,16 +19304,16 @@ a:hover {
 .cd-panel {
   height: 100vh;
   position: fixed;
-  width: 35.98%;
+  width: 35.8vw;
   z-index: 2;
   top: 0;
-  left: 500px;
+  left: 700px;
   background-color: #f5f5f5;
   overflow-x: hidden;
   transition: all .35s ease-in-out;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .cd-panel {
     left: 995px;
   }
@@ -19338,9 +19323,9 @@ a:hover {
   left: 0px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .cd-panel.cd-panel--is-visible {
-    width: 100%;
+    width: 100vw;
   }
 }
 
@@ -19373,11 +19358,16 @@ a:hover {
   max-width: 100%;
 }
 
-@media screen and (min-width: 992px) {
+.col-lg-7 {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
   .col-lg-7 {
     max-width: 64%;
     flex: 0 0 64%;
     z-index: 99;
+    display: block;
   }
   .col-lg-5 {
     max-width: 36%;

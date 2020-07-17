@@ -1,8 +1,12 @@
-@media screen and(min-width: 992px) {
+.col-lg-7 {
+  display: none;
+}
+@media screen and(min-width: 769px) {
   .col-lg-7 {
     max-width: 64%;
     flex: 0 0 64% ;
     z-index: 99;
+    display: block;
   }
   
   .col-lg-5 {

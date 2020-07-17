@@ -1,22 +1,22 @@
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: -56px;
-  width: 36%;
-  color: white;
-  text-align: center;
-  background-color: rgb(245,245,245);
-  transition: 0.2s;
-  height: 56px;
-  z-index: 1;
-  >p {
-    color: red;
-  }
+// .footer {
+//   position: fixed;
+//   left: 0;
+//   bottom: -56px;
+//   width: 36%;
+//   color: white;
+//   text-align: center;
+//   background-color: rgb(245,245,245);
+//   transition: 0.2s;
+//   height: 56px;
+//   z-index: 1;
+//   >p {
+//     color: red;
+//   }
 
-  @media screen and(max-width: 992px) {
-    width: 100%;
-  }
-}
+//   @media screen and(max-width: 992px) {
+//     width: 100%;
+//   }
+// }
 
 .card-item > .padding {
   padding: 10px;

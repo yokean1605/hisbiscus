@@ -98,9 +98,14 @@
 }
 
 .scroll-x {
-  max-height: 50vh;
+  max-height: 55vh;
   overflow: auto;
   transition: max-height 0.1s ease-in-out;
+  position: fixed;
+  width: 35.8%;
+  @media screen and(max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .h {

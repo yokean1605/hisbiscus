@@ -4,7 +4,7 @@
     z-index: 999;
     top: auto;
     left: 0;
-    bottom: -1000px;
+    bottom: -1300px;
     background-color: transparent;
     &::after {
       content: '';
@@ -31,7 +31,7 @@
       transform: translate(-50%, -50%);
       z-index: 999;
       background-color: #f5f5f5;
-      @media screen and(max-width: 768px) {
+      @media screen and(max-width: 769px) {
         width: 100% !important;
         height: 100% !important;
       }
@@ -41,21 +41,21 @@
 .cd-panel {
     height: 100vh;
     position: fixed;
-    width: 35.98%;
+    width: 35.8vw;
     z-index: 2;
     top: 0;
-    left: 500px;
+    left: 700px;
     background-color: #f5f5f5;
     overflow-x: hidden;
     transition: all .35s ease-in-out;
-    @media screen and(max-width: 991px) {
+    @media screen and(max-width: 768px) {
         left: 995px;
     }
     &.cd-panel--is-visible {
         // width: 100% !important;
         left: 0px;
-        @media screen and(max-width: 991px) {
-          width: 100%;
+        @media screen and(max-width: 768px) {
+          width: 100vw;
         }
     }
 }
