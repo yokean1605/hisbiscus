@@ -264,3 +264,47 @@ a {
   -webkit-box-shadow: 0 3px 10px rgba(0,0,0,.2);
   box-shadow: 0 3px 10px rgba(0,0,0,.2);
 }
+
+.user-rating {
+  direction: rtl;
+  font-size: 20px;
+  unicode-bidi: bidi-override;
+  padding: 10px 30px;
+  display: inline-block;
+}
+.user-rating input {
+  opacity: 0;
+  position: relative;
+  left: -15px;
+  z-index: 2;
+  cursor: pointer;
+}
+.user-rating span.star:before {
+  color: #777777;
+  content:"ï€†";
+}
+.user-rating span.star {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: normal;
+  position: relative;
+  z-index: 1;
+}
+.user-rating span {
+  margin-left: -15px;
+}
+.user-rating span.star:before {
+  color: #777777;
+  content:"\f005";
+}
+.user-rating input:hover + span.star:before, .user-rating input:hover + span.star ~ span.star:before, .user-rating input:checked + span.star:before, .user-rating input:checked + span.star ~ span.star:before {
+  color: #ffd100;
+  content:"\f005";
+}
+
+.selected-rating{
+  color: #ffd100;
+  font-weight: bold;
+  font-size: 3em;
+}

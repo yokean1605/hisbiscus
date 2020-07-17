@@ -172,7 +172,10 @@
 													<div class="card-body px-2">
 														<div class="card card-item">
 															<div class="padding">
-																<h5 class="card-item-test">Test 5</h5>
+																<a href="#0" class="cd-btn js-cd-panel-trigger"
+																	data-panel="test5">
+																	<h5 class="card-item-test">Test 5</h5>
+																</a>
 															</div>
 														</div>
 													</div>
@@ -396,6 +399,20 @@
 					</div>
 				</div>
 
+				<!-- slider test5 -->
+				<div class="cd-panel cd-panel--from-right js-cd-panel-test5">
+					<div class="cd-panel__container">
+						<header class="cd-panel__header">
+							<a href="#0" class="cd-panel__close js-cd-close" data-background-icon="&#xf053;"></a>
+						</header>
+						<div class="cd-panel__content">
+							<div class="content-detail-item p-5">
+								<h2 class="test-item">Test5</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<!-- slider Heavy Dat Garlick -->
 				<div class="cd-panel cd-panel--from-right js-cd-panel-garlic">
 					<div class="cd-panel__container">
@@ -406,6 +423,28 @@
 							<div class="content-detail-item p-5">
 								<h2 class="test-item mb-3">Garlic</h2>
 								<h6 class="card-text card-text-custom mb-0 text-center">10</h6>
+								<div class="list-img mt-3">
+									<ul class="list-inline mx-auto text-center">
+										<li class="list-inline-item list-img-small">
+											<img src="img/new.png" alt="">
+										</li>
+										<li class="list-inline-item list-img-small">
+											<img src="img/start.png" alt="">
+										</li>
+										<li class="list-inline-item list-img-small">
+											<img src="img/keto.svg" alt="">
+										</li>
+										<li class="list-inline-item list-img-small">
+											<img src="img/gluten.svg" alt="">
+										</li>
+										<li class="list-inline-item list-img-small">
+											<img src="img/gluten-free.svg" alt="">
+										</li>
+										<li class="list-inline-item list-img-small">
+											<img src="img/egg-free.svg" alt="">
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -430,7 +469,7 @@
 		</div>
 
 		<!-- item form -->
-		<div class="col-12 form-slide-bottom">
+		<div class="form-slide-bottom">
 			<div class="cd-panel cd-panel--from-right js-cd-panel-form">
 				<div class="cd-panel__container">
 					<header class="cd-panel__header">
@@ -439,6 +478,19 @@
 					<div class="cd-panel__content">
 						<div class="content-detail-item p-5">
 							<h2 class="test-item">Form</h2>
+							<form id="user-rating-form text-center mx-auto">
+								<span class="user-rating">
+									<input type="radio" name="rating" value="5"><span class="star"></span>
+
+									<input type="radio" name="rating" value="4"><span class="star"></span>
+
+									<input type="radio" name="rating" value="3"><span class="star"></span>
+
+									<input type="radio" name="rating" value="2"><span class="star"></span>
+
+									<input type="radio" name="rating" value="1"><span class="star"></span>
+								</span>
+							</form>
 						</div>
 					</div>
 				</div>
