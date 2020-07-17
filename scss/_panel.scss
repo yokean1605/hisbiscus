@@ -1,31 +1,3 @@
-// .form-slide-bottom {
-//   &::after {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     z-index: 99;
-//     background: rgba(0,0,0,.3);
-//     cursor: pointer;
-//     -webkit-transition: background 0.3s 0.3s;
-//     transition: background 0.3s 0.3s;
-//   }
-//   >.cd-panel {
-//       width: 80% !important;
-//       height: 80%;
-//       top: 50%;
-//       left: 50%;
-//       transform: translate(-50%, -50%);
-//       z-index: 999;
-//       bottom: -1000px;
-      
-//       &.cd-panel--is-visible {
-//         bottom: 0px;
-//     }
-//   }
-// }
 .form-slide-bottom {
   .cd-panel {
     width: 100% !important;
@@ -59,6 +31,10 @@
       transform: translate(-50%, -50%);
       z-index: 999;
       background-color: #f5f5f5;
+      @media screen and(max-width: 768px) {
+        width: 100% !important;
+        height: 100% !important;
+      }
     }
   }
 }

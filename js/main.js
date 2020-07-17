@@ -17,7 +17,7 @@
   // animate scroll
   $('.scroll-x').on('scroll', function () {
     var y = $(this).scrollTop();
-    if (y > 300) {
+    if (y) {
       $(".menu-top").css({ "line-height": "0", "margin-bottom": "0px" });
       $('.pt4').css('padding-top', '0px');
       $(".h").css("max-height", "0px");
@@ -77,7 +77,7 @@
       $(".h").css("max-height", "0px");
       $(".scroll-x").css("max-height", "83vh");
       $(".nav").css({ "box-shadow": "rgba(0, 0, 0, 0.15) 0px 5px 7px -2px" });
-    }, 50);
+    }, 10);
     $('#back-to-top').css('display', 'block');
     $('.footer').css('bottom', '-56px');
   });
