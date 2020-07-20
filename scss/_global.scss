@@ -299,12 +299,12 @@ a {
   content:"\f005";
 }
 .user-rating input:hover + span.star:before, .user-rating input:hover + span.star ~ span.star:before, .user-rating input:checked + span.star:before, .user-rating input:checked + span.star ~ span.star:before {
-  color: #ffd100;
+  color: #F8B2C8;
   content:"\f005";
 }
 
 .selected-rating{
-  color: #ffd100;
+  color: #F8B2C8;
   font-weight: bold;
   font-size: 3em;
 }
