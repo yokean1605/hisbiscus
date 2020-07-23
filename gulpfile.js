@@ -12,6 +12,21 @@ const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
+const csso = require('gulp-csso');
+const concat = require('gulp-concat');
+
+// cross browser
+const AUTOPREFIXER_BROWSERS = [
+  'ie >= 10',
+  'ie_mob >= 10',
+  'ff >= 30',
+  'chrome >= 34',
+  'Safari >= 7',
+  'Opera >= 23',
+  'ios >= 7',
+  'Android >= 4.4',
+  'bb >= 10'
+];
 
 // Load package.json for banner
 const pkg = require('./package.json');
@@ -81,10 +96,7 @@ function css() {
   return gulp
     .src("./scss/**/*.scss")
     .pipe(plumber())
-    .pipe(sass({
-      outputStyle: "expanded",
-      includePaths: "./node_modules",
-    }))
+    .pipe(sass())
     .on("error", sass.logError)
     .pipe(autoprefixer({
       cascade: false

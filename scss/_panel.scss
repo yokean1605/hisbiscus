@@ -99,21 +99,19 @@
 .cd-panel {
     height: 100vh;
     position: fixed;
-    width: 35.8vw;
-    z-index: 2;
+    width: 768px;
+    z-index: 99;
     top: 0;
-    left: 700px;
+    right: -1000px;
     background-color: #f5f5f5;
     overflow-x: hidden;
     transition: all .35s ease-in-out;
-    @media screen and(max-width: 768px) {
-        left: 995px;
-    }
     &.cd-panel--is-visible {
-        // width: 100% !important;
-        left: 0px;
+        right: 0px;
+        // position: absolute !important;
         @media screen and(max-width: 768px) {
           width: 100vw;
+          right: 0vw;
         }
     }
 }
