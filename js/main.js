@@ -68,10 +68,14 @@
       $('.pt4').css('padding-top', '0px');
       $(".h").css("max-height", "0px");
       $(".scroll-x").css("max-height", "85vh");
-      $(".nav").css({ "box-shadow": "rgba(0, 0, 0, 0.15) 0px 9px 9px -8px" });
+      $(".nav").css({ "box-shadow": "rgba(0, 0, 0, 0.15) 0px 5px 7px -2px" });
     }, 10);
-    $(".scroll-x").scrollTop(10);
-    // $('#back-to-top').css('display', 'block');
+    $('#back-to-top').css('display', 'block');
+  });
+
+  $('.nav-link').on('click', function (e) {
+    $(".scroll-x").scrollTop(20);
+    e.preventDefault();
   });
 
 
@@ -131,4 +135,3 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-
