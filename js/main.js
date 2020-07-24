@@ -70,8 +70,8 @@
       $(".scroll-x").css("max-height", "85vh");
       $(".nav").css({ "box-shadow": "rgba(0, 0, 0, 0.15) 0px 9px 9px -8px" });
     }, 10);
-    $('#back-to-top').css('display', 'block');
-    $('.footer').css('bottom', '-56px');
+    $(".scroll-x").scrollTop(10);
+    // $('#back-to-top').css('display', 'block');
   });
 
 
