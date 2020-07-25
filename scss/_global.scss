@@ -79,12 +79,13 @@ h6, a, label, p, div {
   overflow-y: hidden;
   flex-wrap: nowrap;
   padding: 0 10px;
-  >.nav-item {
+  >.item-nav-tabs {
     // width: 25%;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
     white-space: nowrap;
     margin-bottom: 0px;
+    float: left;
     a {
       text-align: center;
       color: #575962;

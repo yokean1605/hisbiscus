@@ -15582,16 +15582,17 @@ h6, a, label, p, div {
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   padding: 0 10px; }
-  .nav-tabs-custom > .nav-item {
+  .nav-tabs-custom > .item-nav-tabs {
     padding-left: 0.1rem;
     padding-right: 0.1rem;
     white-space: nowrap;
-    margin-bottom: 0px; }
-    .nav-tabs-custom > .nav-item a {
+    margin-bottom: 0px;
+    float: left; }
+    .nav-tabs-custom > .item-nav-tabs a {
       text-align: center;
       color: #575962;
       padding: 0px; }
-      .nav-tabs-custom > .nav-item a > span {
+      .nav-tabs-custom > .item-nav-tabs a > span {
         padding: .8rem 1rem;
         display: block;
         font-weight: 600;
@@ -15600,15 +15601,15 @@ h6, a, label, p, div {
         line-height: 22px;
         width: 116px; }
       @media screen and (max-width: 425px) {
-        .nav-tabs-custom > .nav-item a {
+        .nav-tabs-custom > .item-nav-tabs a {
           width: 120px; } }
-    .nav-tabs-custom > .nav-item > a.active, .nav-tabs-custom > .nav-item a:hover {
+    .nav-tabs-custom > .item-nav-tabs > a.active, .nav-tabs-custom > .item-nav-tabs a:hover {
       background-color: transparent;
       color: #b6001d;
       border-color: transparent;
       border-bottom: 2px solid #b6001d; }
     @media screen and (max-width: 425px) {
-      .nav-tabs-custom > .nav-item {
+      .nav-tabs-custom > .item-nav-tabs {
         width: auto !important; } }
 
 .content-left-item {

@@ -36,7 +36,7 @@ $(document).ready(function () {
     var currentScroll = $(this).scrollTop();
     if (currentScroll < 10) {
       $(".h").css("max-height", "100px");
-      $(".nav").css({ "box-shadow": "none" });
+      $(".nav-shadow").css({ "box-shadow": "none" });
     }
   });
 
@@ -55,7 +55,7 @@ $(document).ready(function () {
     $(".menu-top").css({ "line-height": "1.2", "margin-bottom": "1rem" });
     $(".scroll-x").css({ "max-height": "50vh" });
     $(".h").css("max-height", "100px");
-    $(".nav").css({ "box-shadow": "none" });
+    $(".nav-shadow").css({ "box-shadow": "none" });
     $('#back-to-top').css('bottom', '0');
     return false;
   });
@@ -68,7 +68,7 @@ $(document).ready(function () {
       $('.pt4').css('padding-top', '0px');
       $(".h").css("max-height", "0px");
       $(".scroll-x").css("max-height", "85vh");
-      $(".nav").css({ "box-shadow": "rgba(0, 0, 0, 0.15) 0px 5px 7px -2px" });
+      $(".nav-shadow").css({ "box-shadow": "rgba(0, 0, 0, 0.15) 0px 5px 7px -2px" });
     }, 10);
     $('#back-to-top').css('display', 'block');
   });
@@ -76,6 +76,7 @@ $(document).ready(function () {
   $(".b-nav-tab").on('click', function (e) {
     e.preventDefault();
     $('.scroll-x').scrollTop(20);
+    $(this).toggleClass("active");
   })
 
   // open click div unlimited
