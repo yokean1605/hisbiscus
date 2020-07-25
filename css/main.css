@@ -15528,6 +15528,19 @@ h5,
 h6, a, label, p, div {
   font-family: 'Nunito Sans', sans-serif; }
 
+.b-tab {
+  display: none; }
+
+.b-tab.active {
+  display: block; }
+
+.b-nav-tab {
+  display: inline-block;
+  padding: 20px; }
+
+.b-nav-tab.active {
+  color: #ff4200; }
+
 .text-logo {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600; }

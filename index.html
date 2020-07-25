@@ -39,7 +39,7 @@
 					</a>
 				</div>
 
-				<div id="content">
+				<div class="content" id="content">
 					<!-- Logo -->
 					<nav class="navbar navbar-expand-lg navbar-light bg-transparent h">
 						<a class="navbar-brand py-2 m-0 w-100" href="/">
@@ -52,262 +52,242 @@
 						<h6 class="menu-btm">Menu</h6>
 					</div>
 
-					<!-- Menus content -->
-					<ul class="nav nav-tabs nav-tabs-custom" id="myTab" role="tablist">
-						<li class="nav-item">
-							<a class="nav-link active" data-toggle="tab" href="#starters" role="tab"
-								aria-controls="starters" aria-selected="true">
-								<div class="h">
-									<img src="img/starter.jpg" alt="" class="img-fluid rounded img-item">
-								</div>
-								<span>Starters</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#heavyDay" role="tab" aria-controls="heavyDay"
-								aria-selected="false">
-								<div class="h">
-									<img src="img/heavy-day.jpg" alt="" class="img-fluid rounded img-item">
-								</div>
-								<span>Heavy day</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#pasta" role="tab" aria-controls="pasta"
-								aria-selected="false">
-								<div class="h">
-									<img src="img/no-img.svg" alt="" class="img-fluid rounded img-item">
-								</div>
-								<span>Pasta</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#noPasta" role="tab" aria-controls="noPasta"
-								aria-selected="false">
-								<div class="h">
-									<img src="img/no-img.svg" alt="" class="img-fluid rounded img-item">
-								</div>
-								<span>No Pasta</span>
-							</a>
-						</li>
-					</ul>
+					<!-- nav tabs -->
+					<a href="#Starters" data-tab="Starters" class="b-nav-tab active">
+						<div class="h">
+							<img src="img/starter.jpg" alt="" class="img-fluid rounded img-item">
+						</div>
+						<span>Starters</span>
+					</a>
+					<a href="#heavyDay" data-tab="heavyDay" class="b-nav-tab">
+						<div class="h">
+							<img src="img/heavy-day.jpg" alt="" class="img-fluid rounded img-item">
+						</div>
+						<span>Heavy day</span>
+					</a>
+					<a href="#pasta" data-tab="pasta" class="b-nav-tab">
+						<div class="h">
+							<img src="img/no-img.svg" alt="" class="img-fluid rounded img-item">
+						</div>
+						<span>Pasta</span>
+					</a>
+					<a href="#noPasta" data-tab="noPasta" class="b-nav-tab">
+						<div class="h">
+							<img src="img/no-img.svg" alt="" class="img-fluid rounded img-item">
+						</div>
+						<span>No Pasta</span>
+					</a>
 
-					<!-- add starter item -->
-					<div class="tab-content" id="myTabContent">
-						<!-- starters -->
-						<div class="tab-pane fade show active" id="starters" role="tabpanel" aria-labelledby="home-tab">
-							<div class="pt4">
-								<div class="scroll-x px-2 pt-2">
-									<div class="text-center mb-3 title-items">
-										<h5 class="">Starters</h5>
-										<span class="d-block t-menu">Starters Description</span>
-									</div>
+					<!-- tab content here -->
 
-									<!-- item -->
-									<div class="card mb-3 card-item">
-										<a href="#0" class="cd-btn js-cd-panel-trigger" data-panel="item1">
-											<div class="d-flex">
-												<div class="content-left-item">
-													<div class="label-card-img">
-														<img src="img/new.png" alt="new-label" class="img-fluid">
-														<img src="img/start.png" alt="new-label" class="img-fluid">
-													</div>
-													<img src="img/img-big1.jpg" class="card-img" alt="items">
+					<!-- starter item -->
+					<div id="Starters" class="b-tab active">
+						<div class="pt4">
+							<div class="scroll-x px-2 pt-2">
+								<div class="text-center mb-3 title-items">
+									<h5 class="">Starters</h5>
+									<span class="d-block t-menu">Starters Description</span>
+								</div>
+
+								<!-- item -->
+								<div class="card mb-3 card-item">
+									<a href="#0" class="cd-btn js-cd-panel-trigger" data-panel="item1">
+										<div class="d-flex">
+											<div class="content-left-item">
+												<div class="label-card-img">
+													<img src="img/new.png" alt="new-label" class="img-fluid">
+													<img src="img/start.png" alt="new-label" class="img-fluid">
 												</div>
-												<div class="content-right-item">
-													<h6 class="card-title card-title-custom">
-														Item1
-													</h6>
-													<h6 class="card-text card-text-custom mb-0">11.11</h6>
-												</div>
+												<img src="img/img-big1.jpg" class="card-img" alt="items">
 											</div>
-										</a>
+											<div class="content-right-item">
+												<h6 class="card-title card-title-custom">
+													Item1
+												</h6>
+												<h6 class="card-text card-text-custom mb-0">11.11</h6>
+											</div>
+										</div>
+									</a>
+								</div>
+								<a href="#0" class="cd-btn js-cd-panel-trigger" data-panel="test1">
+									<div class="card mb-3 card-item">
+										<div class="padding">
+											<h5 class="card-item-test">
+												Test 1
+											</h5>
+										</div>
 									</div>
-									<a href="#0" class="cd-btn js-cd-panel-trigger" data-panel="test1">
-										<div class="card mb-3 card-item">
-											<div class="padding">
-												<h5 class="card-item-test">
-													Test 1
+								</a>
+								<a href="#0" class="cd-btn js-cd-panel-trigger" data-panel="test2">
+									<div class="card mb-3 card-item">
+										<div class="padding">
+											<h5 class="card-item-test">Test 2</h5>
+										</div>
+									</div>
+								</a>
+								<a href="#0" class="cd-btn js-cd-panel-trigger" data-panel="test3">
+									<div class="card mb-3 card-item">
+										<div class="padding">
+											<h5 class="card-item-test">Test 3</h5>
+										</div>
+									</div>
+								</a>
+								<a href="#0" class="cd-btn js-cd-panel-trigger" data-panel="test4">
+									<div class="card mb-3 card-item">
+										<div class="padding">
+											<h5 class="card-item-test">Test 4</h5>
+										</div>
+									</div>
+								</a>
+								<!-- item with accordions -->
+								<div class="card mb-3 card-item card-accordions">
+									<div class="accordion" id="accordionExample">
+										<div class="card bg-transparent border-0">
+											<div class="card-header p-0 bg-transparent border-0 caret-tri"
+												id="headingOne">
+												<h5 class="card-item-test padding mb-0" data-toggle="collapse"
+													data-target="#collapseOne" aria-expanded="true"
+													aria-controls="collapseOne">
+													Section 1
+													<i class="fas fa-chevron-down" id="i-fas"></i>
 												</h5>
 											</div>
-										</div>
-									</a>
-									<a href="#0" class="cd-btn js-cd-panel-trigger" data-panel="test2">
-										<div class="card mb-3 card-item">
-											<div class="padding">
-												<h5 class="card-item-test">Test 2</h5>
-											</div>
-										</div>
-									</a>
-									<a href="#0" class="cd-btn js-cd-panel-trigger" data-panel="test3">
-										<div class="card mb-3 card-item">
-											<div class="padding">
-												<h5 class="card-item-test">Test 3</h5>
-											</div>
-										</div>
-									</a>
-									<a href="#0" class="cd-btn js-cd-panel-trigger" data-panel="test4">
-										<div class="card mb-3 card-item">
-											<div class="padding">
-												<h5 class="card-item-test">Test 4</h5>
-											</div>
-										</div>
-									</a>
-									<!-- item with accordions -->
-									<div class="card mb-3 card-item card-accordions">
-										<div class="accordion" id="accordionExample">
-											<div class="card bg-transparent border-0">
-												<div class="card-header p-0 bg-transparent border-0 caret-tri"
-													id="headingOne">
-													<h5 class="card-item-test padding mb-0" data-toggle="collapse"
-														data-target="#collapseOne" aria-expanded="true"
-														aria-controls="collapseOne">
-														Section 1
-														<i class="fas fa-chevron-down" id="i-fas"></i>
-													</h5>
-												</div>
 
-												<div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-													data-parent="#accordionExample">
-													<div class="card-body px-2">
-														<div class="card card-item">
-															<div class="padding">
-																<a href="#0" class="cd-btn js-cd-panel-trigger"
-																	data-panel="test5">
-																	<h5 class="card-item-test">Test 5</h5>
-																</a>
-															</div>
+											<div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+												data-parent="#accordionExample">
+												<div class="card-body px-2">
+													<div class="card card-item">
+														<div class="padding">
+															<a href="#0" class="cd-btn js-cd-panel-trigger"
+																data-panel="test5">
+																<h5 class="card-item-test">Test 5</h5>
+															</a>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-
-									<!-- space -->
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<!-- end item -->
 								</div>
 
+								<!-- space -->
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<!-- end item -->
 							</div>
-						</div>
-						<!-- Heavy Day -->
-						<div class="tab-pane fade" id="heavyDay" role="tabpanel" aria-labelledby="profile-tab">
-							<div class="pt4">
-								<div class="scroll-x px-2 pt-2">
-									<div class="text-center mb-3 title-items">
-										<h5 class="">Heavy day</h5>
-										<span class="d-block t-menu">Heavy day Description</span>
-									</div>
 
-									<!-- item -->
-									<a href="#0" class="cd-btn js-cd-panel-trigger" data-panel="garlic">
-										<div class="card mb-3 card-item">
-											<div class="d-flex">
-												<div class="content-left-item no-img">
-													<div class="label-card-img">
-														<img src="img/new.png" alt="new-label" class="img-fluid">
-														<img src="img/start.png" alt="new-label" class="img-fluid">
-													</div>
-												</div>
-												<div class="content-right-item no-img">
-													<h6 class="card-title card-title-custom">
-														Garlic
-													</h6>
-													<h6 class="card-text card-text-custom mb-0">10</h6>
+						</div>
+					</div>
+
+					<!-- item tab heavy -->
+					<div id="heavyDay" class="b-tab">
+						<div class="pt4">
+							<div class="scroll-x px-2 pt-2">
+								<div class="text-center mb-3 title-items">
+									<h5 class="">Heavy day</h5>
+									<span class="d-block t-menu">Heavy day Description</span>
+								</div>
+
+								<!-- item -->
+								<a href="#0" class="cd-btn js-cd-panel-trigger" data-panel="garlic">
+									<div class="card mb-3 card-item">
+										<div class="d-flex">
+											<div class="content-left-item no-img">
+												<div class="label-card-img">
+													<img src="img/new.png" alt="new-label" class="img-fluid">
+													<img src="img/start.png" alt="new-label" class="img-fluid">
 												</div>
 											</div>
+											<div class="content-right-item no-img">
+												<h6 class="card-title card-title-custom">
+													Garlic
+												</h6>
+												<h6 class="card-text card-text-custom mb-0">10</h6>
+											</div>
 										</div>
-									</a>
-
-									<!-- space -->
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-
-									<!-- end item -->
-								</div>
-							</div>
-						</div>
-						<!-- Pasta -->
-						<div class="tab-pane fade" id="pasta" role="tabpanel" aria-labelledby="contact-tab">
-							<div class="pt4">
-								<div class="scroll-x px-2 pt-2">
-									<div class="text-center mb-3 title-items">
-										<h5 class="">Pasta</h5>
-										<span class="d-block t-menu">Pasta Dewscription</span>
 									</div>
-									<!-- end item -->
+								</a>
 
-									<!-- space -->
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<!-- end space -->
-								</div>
+								<!-- space -->
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+
+								<!-- end item -->
 							</div>
 						</div>
-						<!-- No Pasta -->
-						<div class="tab-pane fade" id="noPasta" role="tabpanel" aria-labelledby="contact-tab">
-							<div class="pt4">
-								<div class="scroll-x px-2 pt-2">
-									<div class="text-center mb-3 title-items">
-										<h5 class="">No Pasta</h5>
-										<span class="d-block t-menu">Pasta Description</span>
-									</div>
-									<!-- end item -->
-
-									<!-- space -->
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<div class="py-5"></div>
-									<!-- end space -->
-								</div>
-							</div>
-						</div>
-						<!-- footer fixed -->
-						<!-- <div class="footer py-3">
-							<p class="mb-0 text-center m-auto">Powered by
-								<img src="img/favicon.ico" alt="" class="img-fluid" width="15">
-								finedine
-							</p>
-						</div> -->
 					</div>
-					<!-- end item -->
+
+					<!-- item tab Pasta -->
+					<div id="pasta" class="b-tab">
+						<div class="pt4">
+							<div class="scroll-x px-2 pt-2">
+								<div class="text-center mb-3 title-items">
+									<h5 class="">Pasta</h5>
+									<span class="d-block t-menu">Pasta Dewscription</span>
+								</div>
+								<!-- end item -->
+
+								<!-- space -->
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<!-- end space -->
+							</div>
+						</div>
+					</div>
+
+					<!-- item tab No Pasta -->
+					<div id="noPasta" class="b-tab">
+						<div class="pt4">
+							<div class="scroll-x px-2 pt-2">
+								<div class="text-center mb-3 title-items">
+									<h5 class="">No Pasta</h5>
+									<span class="d-block t-menu">Pasta Description</span>
+								</div>
+								<!-- end item -->
+
+								<!-- space -->
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<div class="py-5"></div>
+								<!-- end space -->
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<!-- click to scroll Top -->

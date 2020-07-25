@@ -19,6 +19,23 @@ h6, a, label, p, div {
   @include nunito-font;
 }
 
+.b-tab {
+  display: none;
+}
+
+.b-tab.active {
+  display: block;
+}
+
+.b-nav-tab {
+  display: inline-block;
+  padding: 20px;
+}
+
+.b-nav-tab.active {
+  color: #ff4200;
+}
+
 .text-logo {
   @include nunito-font;
   font-weight: 600;

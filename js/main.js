@@ -1,11 +1,11 @@
-(function ($) {
-  "use strict"; // start of use strict
+// preloader
+$(window).on('load', function () {
+  $(".loader").delay(2000).fadeOut("slow");
+  $("#overlayer").delay(2000).fadeOut("slow");
+});
 
-  // preloader
-  $(window).on('load', function () {
-    $(".loader").delay(2000).fadeOut("slow");
-    $("#overlayer").delay(2000).fadeOut("slow");
-  });
+$(document).ready(function () {
+  "use strict"; // start of use strict
 
   // accodion icon down and up
   $(".caret-tri").on("click", function () {
@@ -62,7 +62,7 @@
   // end animate scroll
 
   // click nav-link class, scroll down
-  $('.nav-link').on('click', function () {
+  $('.b-nav-tab').on('click', function () {
     setTimeout(function () {
       $(".menu-top").css({ "line-height": "0", "margin-bottom": "0px" });
       $('.pt4').css('padding-top', '0px');
@@ -73,11 +73,10 @@
     $('#back-to-top').css('display', 'block');
   });
 
-  $('.nav-link').on('click', function (e) {
-    $(".scroll-x").scrollTop(20);
+  $(".b-nav-tab").on('click', function (e) {
     e.preventDefault();
-  });
-
+    $('.scroll-x').scrollTop(20);
+  })
 
   // open click div unlimited
   var panelTriggers = document.getElementsByClassName('js-cd-panel-trigger');
@@ -126,7 +125,8 @@
     $('#selected-rating').text($('[name="rating"]:checked').val());
   });
 
-})(jQuery);
+});
+
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
@@ -135,3 +135,33 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+function Tabs() {
+  var bindAll = function () {
+    var menuElements = document.querySelectorAll('[data-tab]');
+    for (var i = 0; i < menuElements.length; i++) {
+      menuElements[i].addEventListener('click', change, false);
+    }
+  }
+
+  var clear = function () {
+    var menuElements = document.querySelectorAll('[data-tab]');
+    for (var i = 0; i < menuElements.length; i++) {
+      menuElements[i].classList.remove('active');
+      var id = menuElements[i].getAttribute('data-tab');
+      document.getElementById(id).classList.remove('active');
+    }
+  }
+
+  var change = function (e) {
+    clear();
+    e.target.classList.add('active');
+    var id = e.currentTarget.getAttribute('data-tab');
+    document.getElementById(id).classList.add('active');
+  }
+
+  bindAll();
+}
+
+var connectTabs = new Tabs();
+
