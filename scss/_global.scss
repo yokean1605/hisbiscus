@@ -206,8 +206,10 @@ h6, a, label, p, div {
   height: 65px;
   float: right;
   position: relative;
-  transition: all 0.1s;
+  transition: all 0.2s;
   bottom: -100px;
+  background-color: rgba(230, 3, 75, .6);
+  box-shadow: 0 3px 10px rgba(0,0,0,.2);
   >img {
     width: 15px;
   }
