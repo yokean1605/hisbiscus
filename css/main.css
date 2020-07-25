@@ -15646,9 +15646,10 @@ h6, a, label, p, div {
     padding-left: 0px; }
 
 .card-item {
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
   background: transparent;
-  border-radius: 5px; }
+  border-radius: 5px;
+  border-color: transparent; }
   .card-item > .row .card-img {
     object-fit: fill;
     min-height: 90px;
@@ -15735,10 +15736,6 @@ a {
   font-weight: 600;
   font-size: 18px;
   color: #e6034b; }
-
-.card-item {
-  border-color: transparent;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15); }
 
 .padding {
   padding: 15px; }

@@ -22,7 +22,7 @@ $(document).ready(function () {
       $('.pt4').css('padding-top', '0px');
       $(".h").css("max-height", "0px");
       $(".scroll-x").css("max-height", "85vh");
-      $(".nav").css({ "box-shadow": "rgba(0, 0, 0, 0.15) 0px 5px 7px -6px" });
+      $(".nav-shadow").css({ "box-shadow": "rgba(0, 0, 0, 0.15) 0px 5px 7px -6px" });
     }
 
     if (y < 10) {
@@ -50,7 +50,7 @@ $(document).ready(function () {
 
   // scroll body to 0px on click
   $('#back-to-top').click(function () {
-    $(".scroll-x").animate({ scrollTop: 0 }, 100);
+    $(".scroll-x").scrollTop(0);
     $('.pt4').css('padding-top', '0.85rem');
     $(".menu-top").css({ "line-height": "1.2", "margin-bottom": "1rem" });
     $(".scroll-x").css({ "max-height": "50vh" });
@@ -68,7 +68,7 @@ $(document).ready(function () {
       $('.pt4').css('padding-top', '0px');
       $(".h").css("max-height", "0px");
       $(".scroll-x").css("max-height", "85vh");
-      $(".nav-shadow").css({ "box-shadow": "rgba(0, 0, 0, 0.15) 0px 5px 7px -2px" });
+      $(".nav-shadow").css({ "box-shadow": "rgba(0, 0, 0, 0.15) 0px 8px 6px -4px" });
     }, 10);
     $('#back-to-top').css('display', 'block');
   });
