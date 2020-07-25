@@ -15581,13 +15581,16 @@ h6, a, label, p, div {
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  padding: 0 10px; }
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
   .nav-tabs-custom > .item-nav-tabs {
     padding-left: 0.1rem;
     padding-right: 0.1rem;
     white-space: nowrap;
-    margin-bottom: 0px;
-    float: left; }
+    margin-bottom: 0px; }
     .nav-tabs-custom > .item-nav-tabs a {
       text-align: center;
       color: #575962;
