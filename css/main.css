@@ -16143,10 +16143,8 @@ a {
   -webkit-transition: all .3s;
   transition: all .3s; }
   .cd-panel.cd-panel--is-visible {
-    right: 0%; }
-    @media screen and (min-width: 769px) {
-      .cd-panel.cd-panel--is-visible {
-        width: 100%; } }
+    right: 0%;
+    width: 100%; }
   @media screen and (min-width: 769px) {
     .cd-panel {
       position: absolute;
