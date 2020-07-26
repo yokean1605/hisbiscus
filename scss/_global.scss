@@ -134,7 +134,8 @@ h6, a, label, p, div {
     position: absolute;
     display: flex;
     >img {
-      max-width: 28px;
+      width: 28px;
+      height: 28px;
     }
   }
 
@@ -195,7 +196,7 @@ h6, a, label, p, div {
   width: 768px;
   bottom: 10px;
   transition: all 0.1s;
-  @media screen and(max-width: 992px) {
+  @media screen and(max-width: 768px) {
     width: 100%;
   }
 }

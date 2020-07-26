@@ -15633,7 +15633,8 @@ h6, a, label, p, div {
     display: -ms-flexbox;
     display: flex; }
     .content-left-item .label-card-img > img {
-      max-width: 28px; }
+      width: 28px;
+      height: 28px; }
   .content-left-item > img {
     border-radius: 5px 0px 0px 5px;
     height: 6rem;
@@ -15681,7 +15682,7 @@ h6, a, label, p, div {
   bottom: 10px;
   -webkit-transition: all 0.1s;
   transition: all 0.1s; }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 768px) {
     .toTop {
       width: 100%; } }
 
@@ -16173,10 +16174,3 @@ a {
 
 .img-content-slide {
   overflow: hidden; }
-
-.col-lg-3 {
-  max-width: 21.25%;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 21.25%;
-  -ms-flex: 0 0 21.25%;
-  flex: 0 0 21.25%; }
